@@ -1,0 +1,143 @@
+.MenuContainer {
+	z-index: 1000;
+	position: absolute;
+	transform: translateX(-16rem);
+	height: 100vh;
+	width: 16rem;
+	background-color: #1F2B39;
+	transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.5s;
+}
+
+.MenuIcon {
+	margin-left: 1.5rem;
+}
+
+
+.SubContainer {
+	margin-right: 0.75rem;
+	margin-left: 0.75rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.Link {
+	transition: all cubic-bezier(0, 0, 0.2, 0.2) 0.2s;
+	text-decoration: none;
+	background-color: #263546;
+	display: flex;
+	padding-left: 0.75;
+	height: auto;
+	width: auto;
+	padding: 0.5rem;
+	margin-top: 0.75rem;
+	color: white;
+	font-size: 1rem;
+	line-height: 2rem;
+	font-weight: 700;
+	border-radius: 0.75rem;
+}
+
+.SubLink {
+	align-items: center;
+	display: flex;
+	border-radius: .75rem;
+	text-decoration: none;
+	margin: 2px 5px 5px 5px;
+	color: white;
+	font-size: 1rem;
+	font-weight: 700;
+	height: 2.1rem;
+	width: auto;
+	padding: .2rem .2rem .5rem 1rem;
+	background: #263546;
+	display: flex;
+	transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+}
+
+.AnchorTitle {
+	margin-top: .4rem;
+}
+
+
+.Links {
+	background-color: #263546;
+	display: flex;
+	height: auto;
+	width: auto;
+	color: white;
+	padding: .5rem .5rem .4rem .5rem;
+	margin-top: 0.75rem;
+	font-size: 1rem;
+	line-height: 2rem;
+	font-weight: 700;
+	border-radius: 0.75rem;
+	transition: all cubic-bezier(0, 0, 0.2, 0.2) 0.2s;
+}
+
+.Links:hover {
+	background: #16A17F;
+}
+
+.Link:hover {
+	background: #16A17F;
+}
+
+.SubLink:hover {
+	background: #18ba9d;
+}
+
+.Icon {
+	padding-top: 0.2rem;
+	padding-left: 0.5rem;
+	width: 22px;
+	height: 22px;
+}
+
+.Title {
+	text-decoration: none;
+	padding-left: 1.5rem;
+}
+
+.LinksDisplay {
+	width: auto;
+	height: auto;
+	padding-top: 0.1rem;
+	background-color: #263546;
+	display: none;
+	transition: all 0.5;
+	border-bottom-left-radius: 0.75rem;
+	border-bottom-right-radius: 0.75rem;
+}
+
+.MenuIconContainer {
+	height: 4rem;
+	width: 4.6rem;
+	align-items: center;
+	background: #16A17F;
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+}
+
+.Logo {
+	display: flex;
+	align-items: center;
+	height: 4rem;
+	width: 16rem;
+	background-color: #16A17F;
+}
+
+.SPNAME {
+	padding-left: 1rem;
+	color: white;
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+.BackGround {
+	z-index: 2;
+	position: absolute;
+	height: 100vh;
+	width: 100vw;
+}

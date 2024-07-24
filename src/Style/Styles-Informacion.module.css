@@ -1,0 +1,121 @@
+.Screen {
+	margin-left: 6rem;
+	background: #1F2B39;
+	height: 100vh;
+	width: auto;
+	overflow: hidden;
+}
+
+.Header {
+	border-radius: 0 0 10px 10px;
+	width: 100%;
+	background: #16A17F;
+	padding-left: 1.5rem;
+	font-weight: bold;
+	padding-top: 0.7rem;
+	font-size: 32px;
+	height: 4rem;
+}
+
+.Browser {
+	border-radius: 10px;
+	margin-left: .8rem;
+	margin-right: .8rem;
+	margin-top: 0.4rem;
+	width: auto;
+	font-weight: bold;
+	font-size: 40px;
+	height: 3rem;
+	background: #0EB68D;
+	display: flex;
+}
+
+.BrowserContainerInput {
+	display: flex;
+	padding-top: 0.1rem;
+	margin-left: 1rem;
+	height: auto;
+}
+
+.Icon {
+	margin-right: .8rem;
+	margin-top: .5rem;
+}
+
+.BrowserInput {
+	padding-top: 4px;
+	font-size: 20px;
+	border: none;
+	width: 23.2rem;
+	border-bottom: 4px solid #18C89D;
+	background-color: transparent;
+	color: white;
+	outline: none;
+	margin-bottom: 0.4rem;
+}
+
+.BrowserInput::placeholder {
+	color: rgba(255, 255, 255, 0.7);
+	position: relative;
+
+}
+
+.optionListConatiner {
+	margin-top: .3rem;
+	padding-left: .5rem;
+}
+
+.optionList {
+	position: absolute;
+	font-size: 16px;
+	list-style-type: none;
+	padding: 0;
+	width: auto;
+	background-color: #16A17F;
+	border-radius: 4px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+	overflow: hidden;
+	z-index: 1000;
+}
+
+.option {
+	padding: 12px 15px;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+}
+
+.option:hover {
+	background-color: #0EB68D;
+}
+
+.option:not(:last-child) {
+	border-bottom: 1px solid #eee;
+}
+
+.colorDisplay {
+	margin-top: 15px;
+	padding: 15px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	border-radius: 8px;
+	transition: all 0.3s ease;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.optionList {
+	animation: fadeIn 0.2s ease-out;
+}
+

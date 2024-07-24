@@ -1,0 +1,7 @@
+.Screen {
+	margin-left: 6rem;
+	background: blue;
+	height: 100vh;
+	width: auto;
+	display: flex;
+}
