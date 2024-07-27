@@ -26,6 +26,7 @@ export default function home() {
       localStorage.setItem("Abierto", "true");
     }
   };
+	
   return (
     <>
       <section className={indexStyles.Screen}>
@@ -75,13 +76,10 @@ export default function home() {
             <header className={indexStyles.Container}>
               <div
                 className={indexStyles.MoreInfo}
-                style={{ height: MoreInfoOpen ? "19.7rem" : "3.4rem" }}
+                style={{ height: MoreInfoOpen ? "auto" : "3rem" }}
               >
                 <footer>
-                  <button
-                    className={indexStyles.MoreInfoTitle}
-                    onClick={ClickMoreInfo}
-                  >
+                  <button className={indexStyles.MoreInfoTitle} onClick={ClickMoreInfo}>
                     <span>ESPECIFICACIONES</span>
                     <i
                       className={indexStyles.MoreInfoTitleIcon}
@@ -91,9 +89,10 @@ export default function home() {
                           : "rotate(0deg)",
                       }}
                     >
-                      <TiArrowSortedDown size={"2.2rem"} />
+                      <TiArrowSortedDown size={"2rem"} />
                     </i>
                   </button>
+										<p className={indexStyles.Paragraph}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quae, esse culpa voluptatem alias veritatis delectus maiores, quas est ea, voluptates minus veniam ad aperiam architecto. Fugiat saepe totam cum.</p>
                 </footer>
               </div>
             </header>

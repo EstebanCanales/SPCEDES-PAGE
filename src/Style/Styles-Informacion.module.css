@@ -1,107 +1,133 @@
 .Screen {
-  margin-left: 6rem;
-  background: #1f2b39;
-  height: 100vh;
-  width: auto;
-  overflow: hidden;
+	margin-left: 5.4rem;
+	height: 100vh;
+	width: auto;
+	overflow: hidden;
 }
 
 .Header {
-  display: flex;
-  justify-content: space-between;
-  border-radius: 0 0 10px 10px;
-  width: 100%;
-  background: #16a17f;
-  padding-left: 1.5rem;
-  font-weight: bold;
-  padding-top: 0.7rem;
-  font-size: 32px;
-  height: 4rem;
+	display: flex;
+	justify-content: flex;
+	border-radius: 0 0 10px 10px;
 }
 
-.BrowserContainerInput {
-  padding-top: 0.1rem;
-  margin-left: 1rem;
-  height: auto;
+.Title {
+	background: #16a17f;
+	border-radius: 5px;
+	padding-right: 1.5rem;
+	padding-left: 1.5rem;
+	font-weight: bold;
+	padding-top: 0.7rem;
+	font-size: 32px;
+	height: 4rem;
+	margin-right: 1rem;
+	width: 100%;
 }
+
 
 .Icon {
-  margin-right: 0.8rem;
-  margin-top: 0.5rem;
+	margin-right: 0.8rem;
+	margin-top: 0.5rem;
+}
+
+.BrowserContainer {
+	background: #263546;
+	width: 70%;
+	padding-left: 1rem;
+	padding-top: .7rem;
 }
 
 .BrowserInput {
-  padding-top: 4px;
-  font-size: 20px;
-  border: none;
-  width: 23.2rem;
-  border-bottom: 4px solid #18c89d;
-  background-color: transparent;
-  color: white;
-  outline: none;
-  margin-bottom: 0.4rem;
+	border: .15rem solid #16a17f99;
+	padding-left: 3px;
+	font-size: 20px;
+	padding-left: .6rem;
+	padding-right: .6rem;
+	padding-top: .3rem;
+	padding-bottom: .3rem;
+	color: white;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	transition: all 0.3s ease;
+}
+
+.TAG {
+	font-weight: bold;
+	padding-top: .5rem;
+	padding-bottom: .55rem;
+	padding-inline: .4rem;
+	font-size: 20px;
+	outline: none;
+	width: auto;
+	color: white;
+	background-color: #16a17f;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
 }
 
 .BrowserInput::placeholder {
-  color: rgba(255, 255, 255, 0.7);
-  position: relative;
+	color: rgba(255, 255, 255, 0.7);
+	position: relative;
+}
+
+.BrowserInput:hover {
+	border: .15rem solid #16a17fff;
 }
 
 .optionListConatiner {
-  margin-top: 0.3rem;
-  padding-left: 0.5rem;
+	margin-top: 0.3rem;
 }
 
 .optionList {
-  position: absolute;
-  font-size: 16px;
-  list-style-type: none;
-  padding: 0;
-  width: auto;
-  background-color: #16a17f;
-  border-radius: 4px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
-  overflow: hidden;
-  z-index: 1000;
+	position: absolute;
+	font-size: 16px;
+	list-style-type: none;
+	padding: 0;
+	width: auto;
+	background-color: #18c89d;
+	border-radius: 4px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 5px 5px rgba(0, 0, 0, 0.08);
+	overflow: hidden;
+	z-index: 1000;
 }
 
 .option {
-  padding: 12px 15px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
+	padding: 12px 15px;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
 }
 
 .option:hover {
-  background-color: #0eb68d;
+	background-color: #0eb68d;
 }
 
 .option:not(:last-child) {
-  border-bottom: 1px solid #eee;
+	border-bottom: 1px solid #eee;
 }
 
 .colorDisplay {
-  margin-top: 15px;
-  padding: 15px;
-  text-align: center;
-  color: white;
-  font-weight: bold;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	margin-top: 15px;
+	padding: 15px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	border-radius: 8px;
+	transition: all 0.3s ease;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
+	from {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
 
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 
 .optionList {
-  animation: fadeIn 0.2s ease-out;
+	animation: fadeIn 0.2s ease-out;
 }

@@ -9,8 +9,8 @@ export const EventInfo = ({ Title, Paragraph }: EventInfoProps) => {
 
 	return (
 		<>
-			<div className={indexStyles.Title}>
-				<h2 className={indexStyles.Text}>
+			<div className={indexStyles.ActualEventHeader}>
+				<h2 className={indexStyles.ActualEventText}>
 					{Title}
 				</h2>
 			</div>

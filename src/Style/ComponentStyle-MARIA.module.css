@@ -1,0 +1,25 @@
+.SubHeader {
+  margin-top: 0.02rem;
+  padding-left: 1rem;
+  border-radius: 10px;
+  padding-top: 0.5rem;
+  height: 3.2rem;
+  background-color: #0eb68d;
+}
+
+.HeaderTitle {
+  font-size: 24px;
+}
+
+.Content {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.paragraph {
+  padding-left: 1rem;
+  font-size: small;
+  letter-spacing: 0.4px;
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+}

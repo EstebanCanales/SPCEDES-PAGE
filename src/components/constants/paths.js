@@ -1,14 +1,21 @@
-export const PATHS_EVENTINFO = [
-	'EXPOTEC',
-	'Maria Axuiliadora',
-	'Aniversario Don Bosco'
+export const SECTION_PATHS = [
+	'DetallesExpotec',
+	'MapaExpotec',
+	'ExpositoresExpotec',
+	'ActividadesExpotec',
+	'HorarioExpotec',
+	'EntradasExpotec',
+	'DetallesMaria',
+	'MapaMaria',
+	'ActividadesMaria',
+	'HorarioMaria',
+	'EntradasMaria',
+	'DetallesDonBosco',
+	'MapaDonBosco',
+	'ActividadesDonBosco',
+	'HorarioDonBosco',
+	'EntradasDonBosco'
 ]
 
-export const PATHS_EXPOTEC = [
-	'detalles',
-	'mapa',
-	'expositores',
-	'horarios',
-	'entradas'
-]
+
 

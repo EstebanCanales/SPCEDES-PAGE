@@ -14,13 +14,16 @@ export const ImageEvent = ({ Title, Source, Alt }: ActualEventProps) => {
       </header>
       <div className={indexStyles.ActualEventDiv}>
         <Image
-          style={{ borderRadius: "10px" }}
+          style={{ borderRadius: "5px" }}
           width={350}
           height={350}
           alt={Alt}
           src={Source}
         />
       </div>
+			<div className={indexStyles.Paragraph}>
+			Expotec es un evento donde se celebran las...
+			</div>
     </section>
   );
 };
