@@ -1,5 +1,12 @@
 import "./global.css";
-import { NavBar } from "@/components/NavBar-MainComponent";
+import { NavBar } from "@/components/ui/NavBar-MainComponent";
+import { Noto_Sans } from 'next/font/google'
+
+const noto_sans = Noto_Sans({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export const metadata = {
   title: "SP-CEDES",
@@ -12,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={noto_sans.className}>
       <body>
         <NavBar />
         {children}

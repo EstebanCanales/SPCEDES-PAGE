@@ -17,5 +17,34 @@ export const SECTION_PATHS = [
 	'EntradasDonBosco'
 ]
 
+export const eventLinks = [
+	{
+		key: 'informacion',
+		name: 'Informacion',
+		href: '/eventos/informacion'
+	},
+	{
+		key: 'graficos',
+		name: 'Graficos',
+		href: '/eventos/graficos'
+	}
+]
 
+export const entreisLinks = [
+	{
+		key: 'citasEnCurso',
+		name: 'Citas en curso',
+		href: '/entradas/encurso'
+	},
+	{
+		key: 'pendientes',
+		name: 'Pendientes',
+		href: '/entradas/pendientes'
+	},
+	{
+		key: 'historial',
+		name: 'Historial',
+		href: '/entradas/historial'
+	}
+]
 

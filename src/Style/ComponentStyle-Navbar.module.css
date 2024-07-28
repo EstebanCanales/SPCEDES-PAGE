@@ -22,7 +22,7 @@
 }
 
 .Link {
-	transition: all cubic-bezier(0, 0, 0.2, 0.2) 0.2s;
+	transition: all cubic-bezier(0, 0, 0.2, 0.2) 0.1s;
 	text-decoration: none;
 	background-color: #263546;
 	border-radius: 5px;
@@ -53,12 +53,12 @@
 	background: #263546;
 	display: flex;
 	transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.18s;
+	border-radius: 5px;
 }
 
 .AnchorTitle {
 	margin-top: .4rem;
 }
-
 
 .Links {
 	background-color: #263546;
@@ -77,7 +77,7 @@
 }
 
 .Link:hover {
-	color: #16A17F;
+	transform: scale(1.01);
 }
 
 .SubLink:hover {

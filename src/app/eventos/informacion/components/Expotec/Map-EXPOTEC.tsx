@@ -2,7 +2,7 @@
 
 import React, { useEffect } from 'react'
 import { Loader } from '@googlemaps/js-api-loader'
-import EventRenderStyle from '../Style/ComponentStyle-EXPOTEC.module.css'
+import styles from '@/Style/ComponentStyle-EXPOTEC.module.css'
 
 interface MarkerPosition {
 	name: string;
@@ -64,6 +64,6 @@ export const Map = () => {
 	}, [])
 
 	return (
-		<div className={EventRenderStyle.Map} style={{}} ref={mapRef}></div>
+		<div className={styles.Map} style={{}} ref={mapRef}></div>
 	)
 }

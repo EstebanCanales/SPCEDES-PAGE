@@ -1,10 +1,7 @@
-/* CSS RESET */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
   color-scheme: dark;
 }
 body {
-  font-family: "Noto Sans", sans-serif;
   background: #1f2b39bf;
 }
 
