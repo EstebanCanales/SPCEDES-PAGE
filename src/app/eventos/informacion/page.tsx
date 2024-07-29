@@ -3,7 +3,8 @@ import React, { useState } from "react";
 import infoStyles from "@/Style/Styles-Informacion.module.css";
 import styles from '@/Style/ComponentStyle-EXPOTEC.module.css'
 import { TiArrowSortedDown } from "react-icons/ti";
-import { SECTION_PATHS as PATH } from "@/components/constants/paths";
+import { SECTION_PATHS as PATH } from "@/ui/constants/paths";
+import { expotecRender, mariaRender, donBoscoRender } from '@/ui/constants/infoPaths'
 
 import {
 	// DONBOSCO RENDERS
@@ -15,7 +16,6 @@ import {
 }
 	from './components/'
 
-import { expotecRender, mariaRender, donBoscoRender } from '@/components/constants/infoPaths'
 
 const Eventos: React.FC = () => {
 	const [selectedSection, setSelectedSection] = useState(PATH[0]);

@@ -1,10 +1,10 @@
 "use client";
-import { useState } from "react";
 
+import { useState } from "react";
 // COMPONENTS
+
 import { Marquee } from "@devnomic/marquee";
 import { EventInfo, IndexImage, ImageEvent } from './components'
-
 //STYLES AND ICONS
 import "@devnomic/marquee/dist/index.css";
 import { TiArrowSortedDown } from "react-icons/ti";

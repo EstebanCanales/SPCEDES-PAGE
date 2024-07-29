@@ -1,5 +1,5 @@
 import "./global.css";
-import { NavBar } from "@/components/ui/NavBar-MainComponent";
+import { NavBar } from "@/ui/components/NavBar-MainComponent";
 import { Noto_Sans } from 'next/font/google'
 
 const noto_sans = Noto_Sans({

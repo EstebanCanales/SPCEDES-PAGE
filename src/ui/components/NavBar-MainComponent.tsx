@@ -10,7 +10,7 @@ import { BsFillPersonVcardFill } from "react-icons/bs";
 import {
 	eventLinks,
 	entreisLinks
-} from '@/components/constants/paths'
+} from '@/ui/constants/paths'
 
 import Link from "next/link";
 import { usePathname } from 'next/navigation'

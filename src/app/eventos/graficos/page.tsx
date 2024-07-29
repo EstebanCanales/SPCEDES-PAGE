@@ -24,6 +24,7 @@ export default GraficosHome;
 interface analisisProps {
 
 }
+
 const Analisis = () => {
 	return (
 		<>
@@ -37,6 +38,10 @@ const Analisis = () => {
 					<div className={styles.CountOfCards}>
 						<div className={styles.AnalisisTitle}>
 							Cantidad de tarjetas
+						</div>
+						<div className={styles.StatContainer}>
+							<div className={styles.StatOne}>10</div>
+							<div className={styles.StatTwo}>10</div>
 						</div>
 					</div>
 				</div>
