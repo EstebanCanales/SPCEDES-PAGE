@@ -22,7 +22,7 @@
 	display: flex;
 	justify-content: space-between;
 	margin-left: .7rem;
-	margin-right: .7rem;
+	margin-right: .6rem;
 	margin-top: 1rem;
 	height: auto;
 	width: auto;
@@ -38,7 +38,9 @@
 	letter-spacing: 0.4px;
 	font-family: Helvetica, sans-serif;
 	font-size: 18px;
+	padding-right: 1rem;
 }
+
 
 .Nav {
 	display: inblock;
@@ -46,6 +48,15 @@
 	height: auto;
 	width: 25rem;
 	background: #263546;
+}
+
+@media screen and (max-width: 724px) {
+	.paragraph {
+		font-size: 14px;
+	}
+	.Nav {
+		overflow: scroll;
+	}
 }
 
 .Button {
@@ -78,6 +89,7 @@
 }
 
 .InfoContainer {
+	overflow: hidden;
 	animation: fadeIn 0.2s ease-out;
 	border-radius: 5px;
 	margin-left: 0.6rem;

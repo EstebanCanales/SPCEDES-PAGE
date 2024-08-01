@@ -1,11 +1,10 @@
 "use client";
 
 import { useState } from "react";
-// COMPONENTS
 
 import { Marquee } from "@devnomic/marquee";
 import { EventInfo, IndexImage, ImageEvent } from './components'
-//STYLES AND ICONS
+
 import "@devnomic/marquee/dist/index.css";
 import { TiArrowSortedDown } from "react-icons/ti";
 import styles from "@/Style/Styles-Index.module.css";
@@ -74,7 +73,7 @@ export default function home() {
             <header className={styles.Container}>
               <div
                 className={styles.MoreInfo}
-                style={{ height: MoreInfoOpen ? "auto" : "3rem" }}
+                style={{ height: MoreInfoOpen ? "20rem" : "3rem" }}
               >
                 <footer>
                   <button className={styles.MoreInfoTitle} onClick={ClickMoreInfo}>

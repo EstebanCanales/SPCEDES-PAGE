@@ -30,7 +30,7 @@ const Analisis = () => {
 		<>
 			<section className={styles.AnalisisSection}>
 				<header className={styles.Header}>
-					<div className={styles.SubTitle}>
+					<div className={styles.SubTitleAna}>
 						Análisis
 					</div>
 				</header>
@@ -55,7 +55,7 @@ const Graficos = () => {
 		<>
 			<section className={styles.GraficosSection}>
 				<header className={styles.Header}>
-					<div className={styles.SubTitle}>
+					<div className={styles.SubTitleGrap}>
 						Graficos
 					</div>
 				</header>

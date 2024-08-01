@@ -34,7 +34,7 @@
 	position: relative;
 	background: #1f2b39;
 	width: 100%;
-	border-radius: 5px;
+	border-radius: inreit;
 	height: 40%;
 }
 
@@ -47,8 +47,9 @@
 }
 
 .MoreInfo {
-	transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.5s;
+	border-radius: 5px;
 	background: #182534;
+	transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.5s;
 }
 
 .MoreInfoTitle {

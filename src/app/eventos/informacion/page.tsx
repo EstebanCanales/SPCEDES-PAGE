@@ -88,7 +88,7 @@ const Eventos: React.FC = () => {
 							<strong className={styles.Title}>Maria Auxiliadora </strong>
 							<i className={styles.Icon} style={{ transform: mariaOpen ? 'rotate(-90deg)' : 'rotate(0deg)' }}><TiArrowSortedDown size={"1.3rem"} /></i>
 						</header>
-						<div className={styles.ButtonContainer} style={{ display: mariaOpen ? '' : 'none' }}>
+						<div className={styles.ButtonContainer} style={{ display: mariaOpen ? 'none' : '' }}>
 							{mariaRender.map((path) => {
 								return (
 									<button
@@ -111,7 +111,7 @@ const Eventos: React.FC = () => {
 							<i className={styles.Icon} style={{ transform: donBoscoOpen ? 'rotate(-90deg)' : 'rotate(0deg)' }}><TiArrowSortedDown size={"1.3rem"} /></i>
 						</header>
 
-						<div className={styles.ButtonContainer} style={{ display: donBoscoOpen ? '' : 'none' }}>
+						<div className={styles.ButtonContainer} style={{ display: donBoscoOpen ? 'none' : '' }}>
 							{donBoscoRender.map((path) => {
 								return (
 									<button
