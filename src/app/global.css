@@ -1,6 +1,14 @@
+
 :root {
-  color-scheme: dark;
+  color-scheme: dark light;
+--MainLightColor: #73F9E3;
+--MainDarkColor: #0eb68d;
+--SecondaryLightColor: #4DE5CD;
+--MainTextLightColor: #263546;
+--MainLinesLightColor: #263546;
 }
+
+
 body {
   background: #1f2b39bf;
 }
