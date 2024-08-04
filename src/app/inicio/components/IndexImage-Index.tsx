@@ -46,7 +46,7 @@ const IndexImage = ({
 					<div className={styles.AlertText}>Informacion copia</div>
 				</div>
 				<Image
-					style={{ height: "90%", width: "100%", borderRadius: "10px" }}
+					style={{ height: "91%", width: "100%", borderRadius: "10px" }}
 					width={1}
 					height={1}
 					alt={Alt}
@@ -56,7 +56,7 @@ const IndexImage = ({
 					<h3 className={styles.ImagesTitle}>{ImagesTitle}</h3>
 					<div className={styles.ImagesAction}>
 						<div className={styles.Icon} onClick={handleClick}>
-							<FaCopy size={"1.2rem"} color={"ffffff"} />
+							<FaCopy size={"1.2rem"}/>
 						</div>
 					</div>
 				</footer>

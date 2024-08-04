@@ -1,5 +1,5 @@
 .Screen {
-	margin-left: 5.4rem;
+	margin-left: 4.8rem;
 	height: 100vh;
 	width: auto;
 	overflow: hidden;
@@ -20,7 +20,7 @@
 	padding-top: 0.6rem;
 	font-size: 32px;
 	height: 4rem;
-	margin-right: 1rem;
+	margin-right: .3rem;
 	width: 100%;
 }
 
@@ -52,10 +52,8 @@
 
 
 .MainContainer {
-	height: 100%;
+	height: 90%;
 	border-radius: 10px;
-	margin-right: 0.6rem;
-	margin-top: 0.2rem;
 	display: flex;
 }
 
@@ -69,27 +67,30 @@
 
 .GraficosSection {
 	border-radius: 5px;
-	height: 100%;
 	width: 75%;
 	animation: fadeIn 0.2s ease-out;
 }
 
 .AnalisisContent {
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 5px 5px rgba(0, 0, 0, 0.08);
 	border-radius: 5px;
 	background: #263546;
 	margin-top: .2rem;
 	width: 100%;
+	height: 106%;
 }
 
 .GrafCompanios {
 	width: 49.7%;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.08);
 	height: 100%;
 	margin-left: .15rem;
 	background: #263546;
-	border-radius: 5px
+	border-radius: 5px;
 }
 
 .GrafPersonalData {
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 2px 5px rgba(0, 0, 0, 0.08);
 	width: 49.7%;
 	margin-right: .15rem;
 	height: 100%;
@@ -97,28 +98,69 @@
 	border-radius: 5px
 }
 
-
 .StatContainer {
-	background-color: red;
 	width: auto;
-	height: 3.5rem;
+	height: 2rem;
 	margin-inline: 1rem;
 	margin-top: .2rem;
 	display: flex;
 	border-radius: 5px;
+	animation: fadeIn 0.2s ease-out;
+}
+
+.PermContainer {
+	display: flex;
+	border-radius: 5px;
+	display: flex;
+	height: 2rem;
+	width: auto;
+	margin-top: .2rem;
+	background: #1F2b39;
+	margin-inline: 1rem;
+}
+
+.PermInfo {
+	background-color: #16A17F;
+	border-radius: 5px;
+	height: 100%;
+	width: 2rem;
+	font-size: 16px;
+	font-weight: bolder;
+}
+
+.Metric {
+	position: absolute;
+	font-size: 20px;
+	color: #fff;
+	width: 20px;
+	margin-top: 4.8rem;
+}
+
+.MetricNumber {
+	text-align: right;
+	width: 2rem;
+	opacity: 0.25;
+	border-bottom: 3px solid #fff;
+	margin-left: 1rem;
+	padding-top: 1.49rem;
+}
+
+.Data {
+	font-size: 12px;
+	padding-left: 1.2rem;
+	font-weight: bold;
 }
 
 .StatOne {
-	background-color: blue;
-	border-radius: 5px;
-	width: 60%;
+	background-color: #16A17F;
+	border-radius: 5px 0 0 5px;
+	border-right: 3px solid #263546;
 	height: 100%;
 }
 
 .StatTwo {
-	background-color: blue;
-	border-radius: 5px;
-	width: 40%;
+	background-color: #1F2B39;
+	border-radius: 0 5px 5px 0px;
 	height: 100%;
 }
 
@@ -138,11 +180,12 @@
 
 .GrafSecondSection {
 	margin-top: .2rem;
-	height: 2rem;
-	height: 45%;
+	height: 60.6%;
+	margin-bottom: 1rem;
 	width: 100%;
 	background: #263546;
 	border-radius: 5px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 5px 5px rgba(0, 0, 0, 0.08);
 }
 
 .AnalisisTitle {
@@ -152,14 +195,332 @@
 	font-weight: bold;
 }
 
-@keyframes fadeIn {
+.barChart {
+	--line-count: 10;
+	--line-color: currentcolor;
+	--line-opacity: 0.25;
+	--item-gap: 2%;
+	--item-default-color: #060606;
+
+	height: 20rem;
+	display: grid;
+	grid-auto-flow: column;
+	gap: var(--item-gap);
+	align-items: end;
+	padding-inline: var(--item-gap);
+	--padding-block: 1.5rem;
+	/*space for labels*/
+	padding-block: var(--padding-block);
+	position: relative;
+	isolation: isolate;
+}
+
+.barChart::after {
+	/* Lineas del fondo */
+	content: "";
+	position: absolute;
+	inset: var(--padding-block) 0;
+	z-index: -1;
+	--line-width: 3px;
+	--line-spacing: calc(100% / var(--line-count));
+
+	background-image: repeating-linear-gradient(to top, transparent 0 calc(var(--line-spacing) - var(--line-width)), var(--line-color) 0 var(--line-spacing));
+	box-shadow: 0 var(--line-width) 0 var(--line-color);
+	opacity: var(--line-opacity);
+}
+
+.item {
+	height: calc(2% * var(--val));
+	background-color: var(--col, #16A17f);
+	position: relative;
+	animation: item-height 1s ease forwards;
+}
+
+.item:hover {
+	height: calc(2.1%());
+}
+
+@keyframes item-height {
+	from {
+		height: 0;
+	}
+}
+
+.item>* {
+	position: absolute;
+	text-align: center;
+}
+
+.item>.label {
+	inset: 100% 0 auto 0;
+}
+
+.item>.value {
+	inset: auto 0 100% 0;
+}
+
+.Body {
+	margin: 0;
+	padding: 3rem;
+	padding-top: 5rem;
+	padding-bottom: 2.5rem;
+	color: #fff;
+	text-align: center;
+	font-size: 14px;
+	transition: all 0.3 ease;
+}
+
+.Body>* {
+	margin-inline: auto;
+}
+
+.donutChartContainer {
+	display: flex;
+	z-index: 100;
+	flex-direction: column;
+	align-items: center;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.donutChart {
+	margin-top: 1rem;
+	width: 230px;
+	height: 230px;
+}
+
+
+.donutSegment {
+	transform-origin: center;
+	animation: growDonut 1s ease-out forwards;
+	transition: all 0.5s;
+}
+
+@keyframes growDonut {
 	from {
 		opacity: 0;
-		transform: translateY(-10px);
 	}
 
 	to {
 		opacity: 1;
-		transform: translateY(0);
+	}
+}
+
+@keyframes growBars {
+	from {
+		width: 0;
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.legend {
+	margin-top: 20px;
+	font-size: 14px;
+	display: flex;
+	width: 20rem;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.legendHorizontalGraph {
+	margin-top: 20px;
+	font-size: 14px;
+	display: flex;
+	width: 20rem;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-left: -3.5rem;
+}
+
+.legendItem {
+	display: flex;
+	align-items: center;
+	margin: 5px 7px;
+}
+
+.colorBox {
+	width: 10px;
+	height: 10px;
+	margin-right: 3px;
+}
+
+.grafTitle {
+	font-size: 20px;
+	padding-left: 1rem;
+	font-weight: bold;
+	padding-top: .4rem;
+}
+
+.horizontalMetric {
+	font-weight: bold;
+	font-size: 16px;
+	margin-top: .4rem;
+}
+
+.horizontalGraf {
+	margin-top: 1rem;
+	margin-left: 10rem;
+	width: 400px;
+	height: 210px;
+	display: flex;
+}
+
+.startGraf {
+	margin-left: 1rem;
+	width: .3rem;
+	background: white;
+	height: auto;
+}
+
+.horazontalsegmentsContainer {
+	width: 100%;
+}
+
+.horizontalSegment {
+	margin-top: .5rem;
+	font-size: 14px;
+	display: flex;
+	flex-wrap: wrap;
+	background: blue;
+	width: 20rem;
+	margin-left: .3rem;
+	padding-left: .3rem;
+	height: 1.6rem;
+	animation: growBars 1s ease-out forwards;
+}
+
+
+.horizontalGrafContainer {
+	display: flex;
+	z-index: 100;
+	flex-direction: column;
+	align-items: center;
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+@media(max-width: 980px) {
+	.horizontalGraf {
+		width: 250px;
+	}
+}
+
+
+@media (max-width: 1100px) {
+	.horizontalGraf {
+		width: 300px;
+	}
+}
+
+
+@media (max-width: 1040px) {
+	.legendHorizontalGraph {
+		margin-left: -4.5rem;
+	}
+	.horizontalGraf {
+		height: 180px;
+		margin-left: 7rem;
+	}
+
+	.horizontalSegment {
+		height: 1.3rem;
+	}
+
+	.horizontalMetric {
+		font-size: 14px;
+		margin-top: .1rem;
+		
+	}
+
+	.AnalisisTitle {
+		font-size: 16px;
+	}
+
+	.legend {
+		width: 15rem;
+	}
+
+	.Body {
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+
+	.Metric {
+		position: absolute;
+		font-size: 20px;
+		color: #fff;
+		width: 20px;
+		margin-top: .78rem;
+	}
+
+	.donutChart {
+		width: 150px;
+		height: 150px;
+	}
+
+	.Label {
+		font-size: 10px;
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	.GrafCompanios {
+		background: #fff;
+	}
+
+	.GrafPersonalData {
+		background: #fff;
+	}
+
+	.GrafSecondSection {
+		background: #fff;
+	}
+
+	.AnalisisContent {
+		background: #fff;
+	}
+
+	.PermInfo {
+		color: #fff
+	}
+
+	.Body {
+		color: #000;
+		opacity: 1;
+	}
+
+	.startGraf {
+		opacity: .8;
+		background: #000;
+	}
+
+	.MetricNumber {
+		color: #000;
+		border-bottom: 3px solid #000;
+	}
+
+	.StatOne {
+		color: #fff;
+		border-color: #fff;
+	}
+
+	.StatTwo {
+		color: #fff;
+	}
+
+	.SubTitleAna {
+		color: #fff;
+	}
+
+	.SubTitleGrap {
+		color: #fff;
+	}
+
+	.Title {
+		color: #fff;
 	}
 }

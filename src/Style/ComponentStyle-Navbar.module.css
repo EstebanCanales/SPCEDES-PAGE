@@ -50,7 +50,6 @@
 	height: 2.1rem;
 	width: auto;
 	padding: .2rem .2rem .5rem 1rem;
-	background: #263546;
 	display: flex;
 	transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.18s;
 	border-radius: 5px;
@@ -142,4 +141,26 @@
 	background: rgb(38, 53, 70);
 	background: linear-gradient(90deg, rgba(38, 53, 70, 1) 0%, rgba(38, 53, 70, 0.5) 50%, rgba(38, 53, 70, 0.1) 100%);
 	transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.5s;
+}
+
+@media (prefers-color-scheme: light) {
+.MenuContainer {
+BackGround: #fff;
+}
+
+.Link {
+background: #fbfbfb;
+color: var(--MainTextLightColor)
+}
+.Links {
+background: #fbfbfb;
+color: var(--MainTextLightColor)
+}
+.LinksDisplay {
+	background: #fbfbfb;
+}
+
+.SubLink {
+	color: var(--MainTextLightColor)
+}
 }

@@ -27,7 +27,7 @@ export default function home() {
   return (
     <>
       <section className={styles.Screen}>
-        <main className={styles.Images}>
+			<main className={styles.Images}>
           <Marquee direction="up" pauseOnHover={true}>
             <IndexImage
               ImagesTitle={"EXPOTEC 2024 | SP-CEDES"}
@@ -54,8 +54,8 @@ export default function home() {
               Alt={"Tumama"}
             />
           </Marquee>
-        </main>
 
+			</main>
         <div className={styles.Info}>
           <ImageEvent
             Title={"EXPOTEC 2024"}

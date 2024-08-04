@@ -8,18 +8,19 @@
 .Header {
 	display: flex;
 	justify-content: flex;
-	border-radius: 0 0 10px 10px;
+	border-radius: 0 0 5px 5px;
 }
 
 .Title {
-	background: #16a17f;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 5px 5px rgba(0, 0, 0, 0.08);
+	background: #0eb68d; 
 	border-radius: 5px;
-	padding-left: 1.5rem;
+	padding-left: 1.1rem;
 	font-weight: bold;
-	padding-top: 0.7rem;
+	padding-top: 0.6rem;
+	margin-bottom: 0.7rem;
 	font-size: 32px;
 	height: 4rem;
-	margin-right: 1rem;
 	width: 100%;
 }
 
@@ -85,7 +86,6 @@
 	width: auto;
 	background-color: #18c89d;
 	border-radius: 4px;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 5px 5px rgba(0, 0, 0, 0.08);
 	overflow: hidden;
 	z-index: 1000;
 }
@@ -129,4 +129,11 @@
 
 .optionList {
 	animation: fadeIn 0.2s ease-out;
+}
+
+@media (prefers-color-scheme: light) {
+  .Title {
+		color: #fff;
+	  background: #16a17f;
+	}
 }

@@ -9,7 +9,7 @@ const DetallesContent = () => {
 				</strong>
 			</header>
 			<main className={styles.Content}>
-				<p className={styles.paragraph} style={{ marginTop: "1rem" }}>
+				<p className={styles.paragraph}>
 					<span>
 						Soluta, voluptatibus voluptates enim nulla ducimus eligendi tempore
 						rem nihil necessitatibus eius aliquam nobis praesentium minus hic,

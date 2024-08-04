@@ -52,10 +52,11 @@ const Eventos: React.FC = () => {
 	return (
 		<>
 			<section className={infoStyles.Screen}>
-				<header className={infoStyles.Header}>
-					<div className={infoStyles.Title}>EVENTOS / INFORMACION</div>
-				</header>
 				<main className={styles.MainContainer}>
+				<div className={styles.NavTitle}>
+				<header className={infoStyles.Header}>
+					<div className={infoStyles.Title}>EVENTOS</div>
+				</header>
 					<nav className={styles.Nav}>
 						<header
 							className={styles.Header}
@@ -73,9 +74,7 @@ const Eventos: React.FC = () => {
 										className={styles.Button}
 										onClick={() => setSelectedSection(path.section)}
 										style={{
-											backgroundColor: selectedSection === path.section ? '#18c89d' : '',
-											color: selectedSection === path.section ? '#1f2b39' : '#fff',
-											fontWeight: selectedSection === path.section ? 'bolder' : 'normal'
+											fontWeight: selectedSection === path.section ? '900' : 'normal'
 										}}
 									><span className={styles.Text}>{path.name}</span>
 									</button>
@@ -96,9 +95,7 @@ const Eventos: React.FC = () => {
 										className={styles.Button}
 										onClick={() => setSelectedSection(path.section)}
 										style={{
-											backgroundColor: selectedSection === path.section ? '#18c89d' : '',
-											color: selectedSection === path.section ? '#1f2b39' : '#fff',
-											fontWeight: selectedSection === path.section ? 'bolder' : 'normal'
+											fontWeight: selectedSection === path.section ? '900' : 'normal'
 										}}
 									><span className={styles.Text}>{path.name}</span>
 									</button>
@@ -119,9 +116,7 @@ const Eventos: React.FC = () => {
 										className={styles.Button}
 										onClick={() => setSelectedSection(path.section)}
 										style={{
-											backgroundColor: selectedSection === path.section ? '#18c89d' : '',
-											color: selectedSection === path.section ? '#1f2b39' : '#fff',
-											fontWeight: selectedSection === path.section ? 'bolder' : 'normal'
+											fontWeight: selectedSection === path.section ? '' : 'normal'
 										}}
 									><span className={styles.Text}>{path.name}</span>
 									</button>
@@ -129,6 +124,7 @@ const Eventos: React.FC = () => {
 							})}
 						</div>
 					</nav>
+        </div>
 					<section className={styles.InfoContainer}>
 						{renderContent()}
 					</section>
@@ -137,5 +133,6 @@ const Eventos: React.FC = () => {
 		</>
 	);
 };
+
 
 export default Eventos;

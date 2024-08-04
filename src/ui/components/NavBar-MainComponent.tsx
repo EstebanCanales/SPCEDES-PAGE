@@ -43,8 +43,7 @@ export const NavBar = () => {
 						href="/inicio"
 						className={styles.Link}
 						style={{
-							backgroundColor: pathname === '/inicio' ? '#16A17F' : '#263546',
-							color: pathname === '/inicio' ? '#263546' : 'white',
+							color: pathname === '/inicio' ? '#16A17F' : '',
 						}}
 					>
 						<i className={styles.Icon}>
@@ -66,8 +65,7 @@ export const NavBar = () => {
 									className={styles.SubLink}
 									href={link.href}
 									style={{
-										backgroundColor: pathname === link.href ? '#16A17F' : '#263546',
-										color: pathname === link.href ? '#263546' : 'white',
+										color: pathname === link.href ? '#16A17F' : '',
 									}}
 								>
 									<h3 className={styles.AnchorTitle}>{link.name}</h3>
@@ -89,8 +87,7 @@ export const NavBar = () => {
 									href={link.href}
 									className={styles.SubLink}
 									style={{
-										backgroundColor: pathname === link.href ? '#16A17F' : '#263546',
-										color: pathname === link.href ? '#263546' : 'white',
+										color: pathname === link.href ? '#16A17F' : '',
 									}}
 								>
 									<h3 className={styles.AnchorTitle}>{link.name}</h3>
@@ -99,7 +96,11 @@ export const NavBar = () => {
 						})}
 					</div>
 
-					<Link href="/chat" className={styles.Link}>
+					<Link
+						style={{
+							color: pathname === '/chat' ? '#16A17F' : '',
+						}}
+					  href="/chat" className={styles.Link}>
 						<i className={styles.Icon}>
 							<IoChatbubbleSharp size={"1.3rem"} />
 						</i>
