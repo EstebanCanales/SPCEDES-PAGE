@@ -1,12 +1,9 @@
 "use client";
-
 import { useState } from "react";
-
 import { Marquee } from "@devnomic/marquee";
-import { EventInfo, IndexImage, ImageEvent } from './components'
-
+import { EventInfo, IndexImage, ImageEvent } from './components/'
+import { TiArrowSortedDown } from '@/ui/Icons'
 import "@devnomic/marquee/dist/index.css";
-import { TiArrowSortedDown } from "react-icons/ti";
 import styles from "@/Style/Styles-Index.module.css";
 
 export default function home() {

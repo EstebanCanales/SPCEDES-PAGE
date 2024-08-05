@@ -17,7 +17,7 @@ import {
 	from './components/'
 
 
-const Eventos: React.FC = () => {
+const Eventos = () => {
 	const [selectedSection, setSelectedSection] = useState(PATH[0]);
 	const [expotecOpen, setExpotecOpen] = useState(true)
 	const [mariaOpen, setMariaOpen] = useState(true)
@@ -55,7 +55,7 @@ const Eventos: React.FC = () => {
 				<main className={styles.MainContainer}>
 				<div className={styles.NavTitle}>
 				<header className={infoStyles.Header}>
-					<div className={infoStyles.Title}>EVENTOS</div>
+					<div className={infoStyles.Title}>Eventos</div>
 				</header>
 					<nav className={styles.Nav}>
 						<header

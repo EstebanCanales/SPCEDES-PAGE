@@ -1,5 +1,5 @@
 .Screen {
-	margin-left: 5.1rem;
+	margin-left: 4.8rem;
 	height: 100vh;
 	width: auto;
 	display: flex;
@@ -18,7 +18,7 @@
 .Info {
 	display: flex;
 	flex-direction: column;
-	margin-left: 1rem;
+	margin-left: .2rem;
 	height: 100vh;
 	width: 30%;
 }
@@ -32,7 +32,7 @@
 
 .ActualEventInfo {
 	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-	margin-top: 1rem;
+	margin-top: .2rem;
 	position: relative;
 	background: #1f2b39;
 	width: 100%;
@@ -57,7 +57,7 @@
 	background: transparent;
 	display: flex;
 	font-weight: bold;
-	padding-top: 1rem;
+	padding-top: .6rem;
 	font-size: 20px;
 	padding-left: 0.8rem;
 	transition: all cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
@@ -175,6 +175,7 @@
 	padding-left: .6rem;
 	height: 17rem;
 	overflow: auto;
+	padding-top: .2rem;
 }
 
 .Paragraph::-webkit-scrollbar {

@@ -19,7 +19,7 @@ const DonutGraph: React.FC<DonutChartProps> = ({ data }) => {
 	return (
 		<div className={styles.GrafPersonalData}>
 			<h3 className={styles.grafTitle}>
-				Areas mas visitadas
+				Áreas más visitadas
 			</h3>
 			<div className={styles.donutChartContainer}>
 				<svg viewBox="0 0 100 100" className={styles.donutChart}>

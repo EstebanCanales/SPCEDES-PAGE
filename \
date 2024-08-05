@@ -48,3 +48,26 @@ export const entreisLinks = [
 	}
 ]
 
+export const MiniMenuPath = [
+	{
+		href: '/inicio'
+	},
+	{
+		href: '/eventos/informacion'
+	},
+	{
+		href: '/eventos/graficos'
+	},
+	{
+		href: '/entradas/encurso'
+	},
+	{
+		href: '/entradas/pendientes'
+	},
+	{
+		href: '/entradas/historial'
+	},
+	{
+		href: '/chat'
+	}
+]

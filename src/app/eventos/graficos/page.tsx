@@ -1,20 +1,13 @@
 import styles from '@/Style/Styles-Graficos.module.css'
-import { Analisis } from './components/'
-import { donutData, barData, horizontalData} from '@/ui/constants/graphInfo'
-import BarGraph from './components/barGraph';
-import DonutGraph from './components/donutGraph'
-import VerticalGraph from './components/verticalGraph'
-
+import {
+	Analisis, VerticalGraph, DonutGraph, BarGraph
+} from './components/'
+import { donutData, barData, horizontalData } from '@/ui/constants/graphInfo'
 
 const GraficosHome = () => {
 	return (
 		<>
 			<section className={styles.Screen}>
-				{/*<header className={styles.Header}>
-				<div className={styles.Title}>
-						GRAFICOS
-					</div>
-				</header>*/}
 				<main className={styles.MainContainer}>
 					<Analisis />
 					<Graficos />
@@ -31,14 +24,14 @@ const Graficos = () => {
 			<section className={styles.GraficosSection}>
 				<header className={styles.Header}>
 					<div className={styles.SubTitleGrap}>
-						Graficos semanales
+						Gráficos semanales
 					</div>
 				</header>
 				<div className={styles.GrafFristSection}>
 					<DonutGraph data={donutData} />
-					<VerticalGraph data={horizontalData}/>
+					<VerticalGraph data={horizontalData} />
 				</div>
-				<BarGraph data={barData}/>
+				<BarGraph data={barData} />
 			</section>
 		</>
 	)
